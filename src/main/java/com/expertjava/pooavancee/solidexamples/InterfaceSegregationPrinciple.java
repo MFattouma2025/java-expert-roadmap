@@ -34,7 +34,7 @@ class Robot implements Travailleur {
 		System.out.println("un Robot ne mge pas !!!  ");
 	}
 	// Problème : un robot n’a pas besoin de manger !
-//	====================> Solution deux interface 
+//	====================> Solution deux interfaces 
 
 	interface TravailleurHumain {
 		void travailler();

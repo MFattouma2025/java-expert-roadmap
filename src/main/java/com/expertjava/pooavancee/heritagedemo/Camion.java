@@ -6,8 +6,8 @@ public class Camion extends Vehicule {
 		super(marque, couleur, pays, immatriculation);
 	}
 	
-    public void demarrer() {
-    	System.out.println("Le camion va demarrer ")	;	
+	public void demarrer() {
+		System.out.println("Le camion va demarrer ");
 	}
 
 }

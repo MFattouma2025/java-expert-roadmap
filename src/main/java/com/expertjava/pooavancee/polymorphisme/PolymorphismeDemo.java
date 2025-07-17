@@ -44,7 +44,7 @@ class Moto implements Transport {
 }
 
 public class PolymorphismeDemo {
-	
+
 	public static void main(String[] args) {
 		// Polymorphisme via héritage
 		Animal a1 = new Chat();
