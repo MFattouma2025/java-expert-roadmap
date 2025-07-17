@@ -1,0 +1,21 @@
+# Fichiers de compilation
+*.class
+
+# Dossiers générés
+/bin/
+/target/
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Fichiers d'environnement IDE
+/.idea/
+/*.iml
+/.vscode/
+/*.classpath
+/*.project
+/.settings/
+
+# Mac/Linux
+.DS_Store
