@@ -19,8 +19,8 @@ Ce dépôt regroupe un **ensemble de cas pratiques avancés en Java**, organisé
 | `05-generics/`               | Généricité avancée (`T extends`, `? super`, `<?>`, méthodes génériques) | ✅ Terminé |
 | `06-enums/`                  | Énumérations avancées (constructeurs, méthodes abstraites, switch, interfaces) | ✅ Terminé |
 | `07-strings/`                | Subtilités de `String`, `StringBuilder`, `StringBuffer`, performances | ✅ Terminé |
-| `08-collections/`            | Collections Java (List, Set, Map, Queue, comparateurs, tri, stream)  | 🔜 En cours |
-| `09-java8-streams/`          | Streams API, lambdas, fonctions pures, pipelines, map/filter/reduce  | 🔜 À venir |
+| `08-collections/`            | Collections Java (List, Set, Map, Queue, comparateurs, tri, stream)  | ✅ Terminé |
+| `09-java8-streams/`          | Streams API, lambdas, fonctions pures, pipelines, map/filter/reduce  | ✅ Terminé |
 | `10-multithreading/`         | Threads, `synchronized`, `ExecutorService`, `CompletableFuture`, etc.| 🔜 À venir |
 | `11-jvm/`                    | Fonctionnement interne de la JVM, GC, JIT, mémoire, stack vs heap    | 🔜 À venir |
 | `12-design-patterns/`        | Patterns GOF en Java : Singleton, Strategy, Observer, Factory, etc.  | 🔜 À venir |

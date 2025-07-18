@@ -5,7 +5,7 @@ public class StringSubtletiesDemo {
 
     public static void main(String[] args) {
 
-        System.out.println("=== 1. Immutabilité ===");
+        System.out.println("=== 1. Immutabilité ==="); //rappel : En Java, une String est immuable, ce qui signifie que son contenu ne peut jamais être modifié une fois l'objet créé.
         String s1 = "Java";
         String s2 = s1.concat(" Rocks");
         System.out.println("s1: " + s1); // Java
@@ -20,9 +20,29 @@ public class StringSubtletiesDemo {
         System.out.println("a.equals(c) : " + a.equals(c)); // true
 
         System.out.println("\n=== 3. Interning ===");
-        String d = new String("world").intern();
+       // le intern() : renvoie une version unique (canonique) d’une String, tirée du pool de chaînes internes (string pool) de la JVM.
+        String str1 = new String("hello");
+        String str2 = "hello";
+        System.out.println(str1 == str2); // false
+        System.out.println(str1.intern() == str2);    // true 
+		/*
+		 * Explication :
+		 *  * new String("hello") crée un objet String en mémoire heap (hors du pool).
+		 *  * "hello" est une chaîne littérale, placée automatiquement dans le string pool.
+		 *  * str1.intern() retourne la référence du string pool → donc égale à str2.
+ *  | Fonction     | Description courte                                         |
+| ------------ | ---------------------------------------------------------- |
+| `intern()`   | Renvoie la version unique du pool de chaînes               |
+| String pool  | Zone mémoire où les chaînes littérales sont partagées      |
+| Avantage     | Moins de mémoire, comparaison rapide avec `==`             |
+| Inconvénient | Peut surcharger le pool, inutilisable pour chaînes uniques |
+
+		 */
+        String d = new String("world").intern(); 
         String e = "world";
         System.out.println("d == e : " + (d == e)); // true
+        
+        
 
         System.out.println("\n=== 4. StringBuilder vs StringBuffer ===");
         StringBuilder sb = new StringBuilder("Bonjour");
