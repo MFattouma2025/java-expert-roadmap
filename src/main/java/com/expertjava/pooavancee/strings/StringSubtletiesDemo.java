@@ -69,7 +69,9 @@ public class StringSubtletiesDemo {
         }
         long end2 = System.nanoTime();
         System.out.println("Temps avec StringBuilder : " + (end2 - start2) / 1_000_000 + " ms");
-
+//        Temps avec '+' : 180 ms
+//        Temps avec StringBuilder : 3 ms
+        
         System.out.println("\n=== 6. Cas courant d’erreur ===");
         String x = null;
         // System.out.println(x.equals("abc")); // ❌ NullPointerException
