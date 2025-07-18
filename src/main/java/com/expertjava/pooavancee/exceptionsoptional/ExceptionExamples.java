@@ -27,7 +27,7 @@ public class ExceptionExamples {
 		System.out.println("Résultat : " + resultat);
 	}
 
-	// 🔹 Exemple 2 : Exception vérifiée (IOException) --> checked Exception
+	// 🔹 Exemple 2 : Exception vérifiée (IOException) --> checked 
 	static void lireFichier(String chemin) throws IOException {
 		BufferedReader reader = new BufferedReader(new FileReader(chemin));
 		String ligne = reader.readLine();

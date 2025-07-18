@@ -4,6 +4,7 @@ package com.expertjava.pooavancee.polymorphisme;
 //**différents types d’objets**, en s’adaptant à leur comportement spécifique.
 //On programme "vers une abstraction", pas vers une implémentation.
 //Le polymorphisme est essentiel pour écrire du code flexible et maintenable.
+//Permet de donner plusieurs formes à une méthode, selon l'objet qui l'appelle.
 
 //Exemple de polymorphisme via héritage
 class Animal {

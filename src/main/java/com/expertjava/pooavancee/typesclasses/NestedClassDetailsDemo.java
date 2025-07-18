@@ -7,12 +7,14 @@ package com.expertjava.pooavancee.typesclasses;
  * - Classe interne (Inner)
  * - Classe imbriquée statique (Static Nested)
  */
+
+// NestedClassDetailsDemo est une Classe externe 
 public class NestedClassDetailsDemo {
 
     private String instanceMessage = "Message d'instance de Outer";
     private static String staticMessage = "Message statique de Outer";
 
-    // 🔹 Classe interne (non statique)
+    // 🔹 Inner :Classe interne (non statique)
     class InnerClass {
         void afficher() {
             System.out.println("➡️ Classe Interne (Inner)");

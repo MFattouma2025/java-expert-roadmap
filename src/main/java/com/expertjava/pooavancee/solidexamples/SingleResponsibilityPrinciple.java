@@ -4,7 +4,8 @@ package com.expertjava.pooavancee.solidexamples;
 
 //Si on crèe une calsse JournalAvecSauvegarde  
 
-public class SingleResponsibilityPrinciple {
+ class Journal {
+	
 	void ajouterPage(String texte) {
 		System.out.println("add page .....");
 	}
@@ -16,7 +17,7 @@ public class SingleResponsibilityPrinciple {
 }
 
 //!!! Mauvais : ici la classe JournalAvecSauvegarde viole SRP, 
-//la calsse Journal doit juste gérer les pages et non le suavegarde
+//la classe Journal doit juste gérer les pages et non le suavegarde
 class JournalAvecSauvegarde {
 	void sauvegarderDansFichier(String nomFichier) {
 		// gestion de fichier => autre responsabilité

@@ -9,7 +9,7 @@ package com.expertjava.pooavancee.heritagedemo;
 //lambda ou des références de méthodes, ce qui facilite la programmation fonctionnelle en Java.
 
 
-// used dans Meat.class
+// voir utilisation dans Meat.class
 @FunctionalInterface
 public interface FunctionnalPrint {
 	

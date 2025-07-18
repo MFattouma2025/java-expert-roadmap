@@ -18,7 +18,7 @@ public class Meat extends Food implements FoodPackage  {
 	}
 
 	@Override
-	public boolean isHealthy() {
+	 boolean isHealthy() {
 		return true;
 	}
 

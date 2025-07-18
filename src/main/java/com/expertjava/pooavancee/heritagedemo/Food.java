@@ -4,7 +4,16 @@ import com.expertjava.pooavancee.heritagedemo.constants.FoodType;
 
 import lombok.Data;
 
-// Héritage classe abstraite  , les calsses filles Meat
+// Héritage classe abstraite  , la classe fille: Meat
+
+/*Classe abstraite = base avec contenu + comportement partiel
+Elle définit à la fois le quoi (méthodes abstraites) et le comment (méthodes implémentées).
+Peut contenir :
+	des méthodes abstraites (à implémenter dans les sous-classes)
+	des méthodes concrètes
+	des attributs (état partagé)
+Une classe ne peut hériter que d’une seule classe abstraite.*/
+
 @Data
 public abstract class Food {
 	
@@ -36,7 +45,7 @@ public abstract class Food {
     }
 
     // Méthodes abstraites à implémenter dans les sous-classes
-    public abstract boolean isHealthy();
+     abstract boolean isHealthy();
 
     public abstract void prepare();
 }

@@ -21,7 +21,6 @@ Ce fichier contient les 4 grands types de classes internes utilisées en Java.
 
 ## Pourquoi connaître ces types de classes ?
 
-Même si tu n’as pas encore eu besoin de ces types de classes dans ton travail, ils sont importants pour :
 
 - Comprendre les subtilités du langage Java.
 - Écrire du code plus **encapsulé** et **modulaire**.
