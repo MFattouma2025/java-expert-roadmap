@@ -35,7 +35,16 @@ public class StreamGroupingPartitionFlatMapDemo {
             new Person("David", 22, "Lyon"),
             new Person("Eve", 35, "Marseille")
         );
+        
+   /*     Difference entre groupingBy et partitioningBy
+        | Critère           | `groupingBy()`                             | `partitioningBy()`                      |
+        | ----------------- | ------------------------------------------ | --------------------------------------- |
+        | Condition         | Basée sur **toute valeur** (clé)           | Basée sur un **booléen**                |
+        | Nombre de groupes | Autant que de valeurs distinctes de la clé | Toujours **2** groupes : `true`/`false` |
+        | Résultat          | `Map<K, List<T>>`                          | `Map<Boolean, List<T>>`                 |
+        | Exemple typique   | Par ville, par rôle, par niveau            | Majeur vs Mineur, Valide vs Invalide    |
 
+   */
         System.out.println("=== 1. GroupingBy : personnes par ville ===");
         Map<String, List<Person>> parVille = personnes.stream()
             .collect(Collectors.groupingBy(Person::getVille));
@@ -76,6 +85,6 @@ public class StreamGroupingPartitionFlatMapDemo {
             .flatMap(List::stream)  // transforme Stream<List<String>> → Stream<String>
             .collect(Collectors.toList());
 
-        System.out.println("Technos à plat : " + toutAPlat);
+        System.out.println("Technos à plat : " + toutAPlat);//Technos à plat : [Java, Python, C++, Rust, Go]
     }
 }
