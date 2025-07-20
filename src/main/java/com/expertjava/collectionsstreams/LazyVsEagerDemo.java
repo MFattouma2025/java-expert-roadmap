@@ -8,6 +8,8 @@ import java.util.stream.Stream;
 | **Intermédiaire** | `map`, `filter`, `peek`, `sorted`         | ✅ Oui  | ❌ Non                   |
 | **Terminale**     | `collect`, `forEach`, `count`, `anyMatch` | ❌ Non  | ✅ Oui                   |*/
 
+// les stream sont lazy alors que les list.of et arraylist sont eager...
+
 public class LazyVsEagerDemo {
 
     public static void main(String[] args) {

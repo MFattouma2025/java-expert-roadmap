@@ -6,7 +6,7 @@ import com.expertjava.pooavancee.heritagedemo.Meat;
 //Dépendre d’abstractions, pas de classes concrètes.
 //Dans spring boot on utilise le autowired , un exemple j eveux envoyer un colis ,
 // dans mon colis j'injecte l'objet serviceenvoie , je n'ai pas besoin de comprrndre 
-//comment il va faire son trvavail ce service 
+//comment il va faire son trvavail le service 
 
 interface Clavier {
 	String lireSaisie();

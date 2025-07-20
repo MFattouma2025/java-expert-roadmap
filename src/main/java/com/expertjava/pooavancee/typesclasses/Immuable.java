@@ -48,7 +48,7 @@ record Person2(String name, int age) {
 	}
 }
 
-//Exemple avec un champ mutable (les listes ne sont pas immuable dsasn ca cas )
+//Exemple avec un champ mutable (les listes ne sont pas immuable dans ca cas )
 
 final class Employee {
 	private final String name;
