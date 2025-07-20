@@ -1,6 +1,6 @@
 package com.expertjava.pooavancee.solidexamples;
 
-//S - Single Responsibility Principle (SRP) JournalSRP
+//S - Single Responsibility Principle (SRP) 
 //O - Open/Closed Principle (OCP) FormeOCP
 //L - Liskov Substitution Principle (LSP)
 //I - Interface Segregation Principle (ISP)

@@ -67,7 +67,7 @@ public class CollectionsDemo {
         Set<Person> set = new HashSet<>();
         set.add(new Person("Alice", 30));
         set.add(new Person("Alice", 30));
-        //pour eviter ce doublons il faut implementer hascode et equals dans l'objet Person
+        //pour eviter les doublons dans ce cas il faut implementer hascode et equals dans l'objet Person
         
         Set<String> linkedHashSet = new LinkedHashSet<>();
         linkedHashSet.add("Banane");

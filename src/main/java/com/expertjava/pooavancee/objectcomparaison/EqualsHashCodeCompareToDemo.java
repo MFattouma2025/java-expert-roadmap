@@ -2,6 +2,8 @@ package com.expertjava.pooavancee.objectcomparaison;
 
 import java.util.*;
 
+import com.expertjava.pooavancee.heritagedemo.Avion;
+
 public class EqualsHashCodeCompareToDemo {
 	public static void main(String[] args) {
 		Personne p1 = new Personne("Alice", 30);
@@ -27,9 +29,18 @@ public class EqualsHashCodeCompareToDemo {
 		// 3. compareTo
 		List<Personne> personnesList = new ArrayList<>(personnesSet);
 		Collections.sort(personnesList);
-
+		
 		System.out.println("\nListe triée par âge :");
 		personnesList.forEach(System.out::println);
+		
+		List<Avion> avionsList = new ArrayList<>();
+		avionsList.add(new Avion("Airbus", "Blanc", "France", "F-1234"));
+		avionsList.add(new Avion("Boeing", "Gris", "USA", "N-5678"));
+		//Dans le cas ou on ne veut pas utiliser l'interface comparable :
+		Collections.sort(avionsList, Comparator.comparing(Avion::getCouleur));
+
+		System.out.println("\nListe d'avions triée par couleur :");
+		avionsList.forEach(System.out::println);
 	}
 	
 }
@@ -42,6 +53,11 @@ public class EqualsHashCodeCompareToDemo {
 			this.nom = nom;
 			this.age = age;
 		}
+		
+		public String getNom() {
+			return this.nom;
+		}
+		
 
 		// 1. equals() - égalité logique basée sur le nom et l'âge
 		@Override

@@ -3,10 +3,11 @@ package com.expertjava.collectionsstreams;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-/*| Type d’opération  | Exemples                                  | Lazy ? | Déclenche l’exécution ? |
+
+/*| Type d’opération  | Exemples                                | Lazy ? | Déclenche l’exécution ? |
 | ----------------- | ----------------------------------------- | ------ | ----------------------- |
-| **Intermédiaire** | `map`, `filter`, `peek`, `sorted`         | ✅ Oui  | ❌ Non                   |
-| **Terminale**     | `collect`, `forEach`, `count`, `anyMatch` | ❌ Non  | ✅ Oui                   |*/
+| **Intermédiaire** | `map`, `filter`, `peek`, `sorted`         | ✅ Oui | ❌ Non                   |
+| **Terminale**     | `collect`, `forEach`, `count`, `anyMatch` | ❌ Non | ✅ Oui                   |*/
 
 // les stream sont lazy alors que les list.of et arraylist sont eager...
 
@@ -39,4 +40,18 @@ public class LazyVsEagerDemo {
             .anyMatch(n -> n.equals("Bob")); // dès que trouvé, ça s'arrête
     }
 }
+//expetced output
+//=== 1. Construction du stream (lazy) ===
+//Rien ne s'est exécuté jusqu'ici.
+//
+//=== 2. Déclenchement par une opération terminale ===
+//Filtrage : Alice
+//Filtrage : Bob
+//Filtrage : Charlie
+//Filtrage : Anna
+//Résultat : [Alice, Anna]
+//
+//=== 3. Exécution optimisée avec short-circuit (anyMatch) ===
+//Test : Alice
+//Test : Bob
 

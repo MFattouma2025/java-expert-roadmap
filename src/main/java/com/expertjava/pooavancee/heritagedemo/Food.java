@@ -13,6 +13,8 @@ Peut contenir :
 	des méthodes concrètes
 	des attributs (état partagé)
 Une classe ne peut hériter que d’une seule classe abstraite.*/
+//Une classe abstarite peut heriter d'une classe abstraite ou non 
+
 
 @Data
 public abstract class Food {

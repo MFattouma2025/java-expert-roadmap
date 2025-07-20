@@ -8,7 +8,6 @@ package com.expertjava.pooavancee.typesclasses;
  * - Classe imbriquée statique (Static Nested)
  */
 
-// NestedClassDetailsDemo est une Classe externe 
 public class NestedClassDetailsDemo {
 
     private String instanceMessage = "Message d'instance de Outer";

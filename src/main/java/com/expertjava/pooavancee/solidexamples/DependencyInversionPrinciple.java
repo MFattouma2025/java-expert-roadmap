@@ -4,9 +4,9 @@ import com.expertjava.pooavancee.heritagedemo.Meat;
 
 //D - Dependency Inversion Principle (DIP)
 //Dépendre d’abstractions, pas de classes concrètes.
-//Dans spring boot on utilise le autowired , un exemple j eveux envoyer un colis ,
-// dans mon colis j'injecte l'objet serviceenvoie , je n'ai pas besoin de comprrndre 
-//comment il va faire son trvavail le service 
+//Dans spring boot on utilise le autowired , un exemple :je veux envoyer un colis ,
+// dans mon colis j'injecte l'objet serviceenvoie , je n'ai pas besoin de comprendre 
+//comment il va faire le travail le service 
 
 interface Clavier {
 	String lireSaisie();

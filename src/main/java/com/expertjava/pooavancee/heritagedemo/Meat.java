@@ -40,8 +40,7 @@ public class Meat extends Food implements FoodPackage  {
 
 	public void fullPackagingProcess() {
 		
-		FunctionnalPrint print = (msg) -> System.out.println("Type de packaging : " + msg);
-	
+		FunctionnalPrint print = (msg) -> System.out.println("Type de packaging : " + msg); // implementation de la methode print dans fucntionnelprint  	
 		print.print(String.format("%s , meat origin UE : %s" ,getPackageType(), isOriginUE ));
 		FunctionnalPrint.printOKFood();
 		

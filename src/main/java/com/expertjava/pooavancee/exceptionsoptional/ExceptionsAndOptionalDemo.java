@@ -1,5 +1,9 @@
 package com.expertjava.pooavancee.exceptionsoptional;
 
+/*
+ * rappel :  checked => verifié par le compilateur : SQLException   IOException, tous ceux extends Exception (sauf RuntimeException)
+ * unchecked => non verifié par le compilateur : tous ceux extends RuntimeException  RuntimeException :  nullpointerexception , IllegalArgumentException..
+ */
 import java.io.*;
 import java.util.Optional;
 
@@ -29,6 +33,16 @@ public class ExceptionsAndOptionalDemo {
 	}
 
 	// Utilisation de Optional
+	/*
+	 * On utilise le optinnel : Pour exprimer explicitement qu’une valeur peut être
+	 * absente (au lieu de retourner null).
+	 * Pour éviter les NullPointerException en forçant à traiter le cas où la valeur
+	 * est absente.
+	 * Pour écrire un code plus fonctionnel avec des méthodes comme map(), filter(),
+	 * orElse(), etc.
+	 */
+
+
 	static void afficherNomEnMajuscules(Optional<String> nom) {
 		// map transforme la valeur si présente
 

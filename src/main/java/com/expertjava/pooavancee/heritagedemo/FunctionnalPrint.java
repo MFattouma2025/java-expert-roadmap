@@ -1,4 +1,5 @@
 package com.expertjava.pooavancee.heritagedemo;
+
 //@FunctionalInterface est une annotation informative qui indique qu'une interface 
 //est conçue pour être une interface fonctionnelle. Une interface fonctionnelle est une 
 //interface qui a une seule et unique méthode abstraite (Single Abstract Method ou SAM).
@@ -8,8 +9,9 @@ package com.expertjava.pooavancee.heritagedemo;
 //Les interfaces fonctionnelles sont utilisées pour implémenter des expressions 
 //lambda ou des références de méthodes, ce qui facilite la programmation fonctionnelle en Java.
 
-
+// exemple de FunctinalInterface : java.util.Predicate 
 // voir utilisation dans Meat.class
+
 @FunctionalInterface
 public interface FunctionnalPrint {
 	

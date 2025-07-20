@@ -39,21 +39,4 @@ Ce fichier contient les 4 grands types de classes internes utilisées en Java.
 
 ---
 
-## Pourquoi tu ne les vois pas toujours ?
-
-- Beaucoup de frameworks modernes utilisent des mécanismes comme les **lambdas** ou **proxies** qui masquent ces détails.
-- Les projets simples préfèrent souvent des classes nommées classiques, plus lisibles.
-- Leur usage est plus fréquent dans les projets complexes ou très modulaires.
-
----
-
-## Ce que tu gagnes à les connaître
-
-- Mieux comprendre comment Java gère les relations entre classes.
-- Être capable d’écrire du code plus flexible et propre.
-- Pouvoir lire et maintenir du code avancé ou provenant d’autres développeurs.
-
----
-
-Tu peux tester les exemples pratiques dans `ClassTypesDemo.java`, `NestedClassDetailsDemo.java` et `AnonymousAndLocalClassDemo.java` pour voir ces concepts en action.
 

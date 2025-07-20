@@ -95,11 +95,16 @@ public class StreamBasicsDemo {
         System.out.println("Vers un Set (pas de doublon) : " + set);//=>Vers un Set (pas de doublon) : [Ahmed, Eve, Charlie, David, Bechir]
 
         System.out.println("\n=== 9. Statistiques (count, min, max) ===");
+        
+        //("Ahmed", "Bechir", "Charlie", "Ahmed", "David", "Eve");
         long count = noms.stream().count();
         Optional<String> min = noms.stream().min(String::compareTo);
-        Optional<String> max = noms.stream().max(Comparator.comparing(String::length));
+        Optional<String> max = noms.stream().max(String::compareTo);
+        Optional<String> maxL = noms.stream().max(Comparator.comparing(String::length));
+        
         System.out.println("Nombre d'éléments : " + count);//=>Nombre d'éléments : 6
         System.out.println("Min (alpha) : " + min.orElse("n/a"));//=>Min (alpha) : Ahmed
-        System.out.println("Max (longueur) : " + max.orElse("n/a"));//=>Max (longueur) : Charlie
+        System.out.println("Max (alpha) : " + max.orElse("n/a"));//=>Max (alpha) : Eve
+        System.out.println("Max (longueur) : " + maxL.orElse("n/a"));//=>Max (longueur) : Charlie
     }
 }

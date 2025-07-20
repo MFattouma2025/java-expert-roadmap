@@ -6,9 +6,9 @@ public class PatternMatchingDemo {
     public static void main(String[] args) {
         Object obj1 = "Bonjour";
         Object obj2 = 123;
-        Object obj3 = new User("Fattouma", 48);
+        Object obj3 = new User("Fattouma", 41);
         Object obj4 = 3.14;
-        var obj5 = new Adresse("Rue", 48,"Paris","France");
+        var obj5 = new Adresse("Rue", 41,"Paris","France");
 
         System.out.println("=== instanceof pattern matching avec if ===");
         printIfString(obj1);
